@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Scraper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav__logo">
+            <h1>Instagram Profile Scraper</h1>
+        </div>
+
+        <div class="nav__menu">
+            <a href="https://github.com/ferreira-js" target="_blank">Github</a>
+            <a href="https://github.com/Ferreira-Js?tab=repositories" target="_blank">More projects</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__img">
+            <img src="assets/instagram_logo.png" alt="Instagram logo">
+        </div>
+
+        <div class="main__body">
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="username">
+
+            <button onclick="search()">Search</button>
+        </div>
+
+        <div class="result">
+
+            <!-- Sei que pode estar um pouco confuso este código, mas essa foi a única maneira que encontrei para deixar os textos alinhados. -->
+
+            <p id="error__msg" hidden style="color: red; text-decoration: underline;">User not found.</p>
+
+            <div class="info">
+                <label>Full name &nbsp;</label>
+                <p id="name"></p>
+            </div>
+
+            <div class="info">
+                <label>Is Verified? &nbsp;</label>
+                <p id="verified"></p>
+            </div>
+
+            <div class="info">
+                <label>Is Private? &nbsp;</label>
+                <p id="private"></p>
+            </div>
+
+            <div class="info">
+                <label>Biography &nbsp;</label>
+                <p id="biography"></p>
+            </div>
+
+            <div class="info">
+                <label>Followers &nbsp;</label>
+                <p id="followers"></p>
+            </div>
+            
+            <div class="info">
+                <label>Following &nbsp;</label>
+                <p id="following"></p>
+            </div>
+
+            <div class="info">
+                <label>ID &nbsp;</label>
+                <p id="user__id"></p>
+            </div>
+
+            <div class="info">
+                <label>Media Count &nbsp;</label>
+                <p id="media__count"></p>
+            </div>
+
+            <div class="info">
+                <label>Profile Picture Link &nbsp;</label>
+                <p id="pfp__link"></p>
+            </div>
+
+            <!-- <label></label>
+            <p id=""></p> -->
+        </div>
+    </main>
+
+    <footer>
+        <p>⭐ Criado para testar tudo que aprendi sobre o uso de API's em estudos realizados recentemente. <a href="https://github.com/ferreira-js?tab=repositories" target="_blank" id="footer__text">Clique aqui</a> para ver mais projetos como esse =)</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

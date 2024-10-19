@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(65, 0, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    /* background-color: darkgreen; */
+    padding: 20px;
+    text-align: center;
+    
+}
+
+header > div {
+    padding: 10px;
+}
+
+header > .nav__logo > h1 {
+    /* Com ajuda do site: https://blog.cisne.dev/texto-com-degrade-em-css-igual-a-esse-titulo/ eu consegui fazer um degradê maneiro com as cores do instagram*/
+    background-image: linear-gradient(to bottom, #833AB4, 25%, #FD1D1D, #FCB045);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.nav__menu > a {
+    padding: 10px;
+    text-decoration: none;
+    color: #FD1D1D;
+    font-size: large;
+}
+
+.nav__menu > a:hover {
+    text-decoration: underline;
+    color: #ED9E2C;
+    
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div > img {
+    width: 150px;
+}
+
+.main__body {
+    color: #FD1D1D;
+}
+
+.main__body > label, input, button {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__body > button {
+    margin: 10px;
+    padding: 10px;
+    /* background: linear-gradient(to bottom, #833AB4, #FD1D1D, #FCB045); */
+    background-color: #FD1D1D;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.452) 3px 3px;
+}
+
+.main__body > button:hover {
+    /* padding: 13px; */
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+
+.result {
+    /* background-color: red; */
+    width: 700px;
+    height: 210px;
+    padding: 1px;
+    /* color: #FD1D1D; */
+}
+
+.result > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.result > div > label {
+    color: #FD1D1D;
+}
+
+.result > div > p {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    padding: 10px;
+    /* margin-top: 195px; */
+    color: white;
+    font-weight: bold;
+}
+
+#footer__text {
+    text-decoration: none;
+    color: #FD1D1D;
+}
+
+#footer__text:hover {
+    text-decoration: underline;
+    color: #ED9E2C;
+}
+
+
